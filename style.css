@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar layout */
+.sidebar {
+  width: 260px;
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Search box */
+.sidebar input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  background-color: #2a2a3d;
+  color: white;
+}
+
+/* Title buttons */
+.sidebar button.title-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 12px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar button.title-btn:hover {
+  background-color: #33334d;
+}
+
+/* Main code view panel */
+.main {
+  flex-grow: 1;
+  padding: 30px;
+  position: relative;
+}
+
+pre {
+  background-color: #2e3440;
+  color: #eceff4;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: monospace;
+  position: relative;
+  font-size: 14px; /* or 1.2rem, etc. */
+}
+
+/* Copy Button */
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: #45a049;
+}

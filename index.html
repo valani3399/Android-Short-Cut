@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Viewer with Sidebar + File Loading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <input type="text" placeholder="Search title..." oninput="filterTitles(this.value)">
+    <div id="title-list"></div>
+  </div>
+
+  <div class="main">
+    <button class="copy-btn" onclick="copyCode()">Copy</button>
+    <pre><code id="code-display">Welcome To Android Short Cut Code</code></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
